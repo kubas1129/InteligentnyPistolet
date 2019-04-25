@@ -14,7 +14,7 @@ ACHeadQuarter::ACHeadQuarter()
 void ACHeadQuarter::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
 }
 
 // Called every frame
@@ -23,4 +23,5 @@ void ACHeadQuarter::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 
 }
+
 

@@ -36,6 +36,11 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	void AddAmbulanceToQuarter(ACAmbulance* amb) { this->ambulances.AddUnique(amb); }
+	
+	UFUNCTION(BlueprintImplementableEvent)
+	void AlarmPatrolInRange(float range);
+	
+
 
 
 };

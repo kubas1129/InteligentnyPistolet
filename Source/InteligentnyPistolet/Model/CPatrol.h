@@ -53,4 +53,12 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void AssignNavigation(ACNavi* navi) { this->navigation = navi; }
 
+
+
+	UFUNCTION(BlueprintCallable)
+	int32 GetPatrolId() const { return patrolId; }
+	UFUNCTION(BlueprintCallable)
+	TArray<ACPoliceman*> GetOfficers() const { return policeOfficers; }
+	UFUNCTION(BlueprintCallable)
+	ACNavi* GetNavi() const { return navigation; }
 };

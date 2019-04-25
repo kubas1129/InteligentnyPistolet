@@ -80,6 +80,9 @@ struct FSmartWatchOrderResponse
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	int32 victimsNumber;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	bool deactivateThreat;
+
 };
 
 
@@ -137,6 +140,26 @@ struct FAmbulanceResponse
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	FTimespan expectedArrivalTime;
+
+};
+
+
+/*
+*		INFO WIDGETS
+*/
+
+
+USTRUCT(BlueprintType)
+struct FThreatInfo
+{
+	GENERATED_BODY()
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	int32 threatId;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	int32 threatPriority;
+
 
 };
 
