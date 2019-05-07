@@ -7,7 +7,7 @@
 #include "StructEnum/CStructs.h"
 
 #include "CoreMinimal.h"
-#include "GameFramework/Pawn.h"
+#include "GameFramework/Character.h"
 #include "CPatrol.generated.h"
 
 
@@ -19,7 +19,7 @@
 
 
 UCLASS()
-class INTELIGENTNYPISTOLET_API ACPatrol : public APawn
+class INTELIGENTNYPISTOLET_API ACPatrol : public ACharacter
 {
 	GENERATED_BODY()
 

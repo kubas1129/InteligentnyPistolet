@@ -3,11 +3,11 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameFramework/Pawn.h"
+#include "GameFramework/Actor.h"
 #include "CAmbulance.generated.h"
 
 UCLASS()
-class INTELIGENTNYPISTOLET_API ACAmbulance : public APawn
+class INTELIGENTNYPISTOLET_API ACAmbulance : public AActor
 {
 	GENERATED_BODY()
 
@@ -20,6 +20,5 @@ protected:
 public:	
 	virtual void Tick(float DeltaTime) override;
 
-	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 };

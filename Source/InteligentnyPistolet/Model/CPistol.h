@@ -24,9 +24,13 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 
+
 	UFUNCTION(BlueprintImplementableEvent)
 	bool Fire(FPistolShotEvent shotEvent);
 
+
+	UFUNCTION(BlueprintCallable)
+	int32 GetPistolId() const { return pistol_id; }
 
 
 };

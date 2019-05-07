@@ -14,6 +14,8 @@ ACPistol::ACPistol()
 void ACPistol::BeginPlay()
 {
 	Super::BeginPlay();
+
+	pistol_id = FMath::RandRange(10000, 99999);
 	
 }
 

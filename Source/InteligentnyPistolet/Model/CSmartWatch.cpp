@@ -14,6 +14,8 @@ ACSmartWatch::ACSmartWatch()
 void ACSmartWatch::BeginPlay()
 {
 	Super::BeginPlay();
+
+	smartWatch_id = FMath::RandRange(10000, 99999);
 	
 }
 

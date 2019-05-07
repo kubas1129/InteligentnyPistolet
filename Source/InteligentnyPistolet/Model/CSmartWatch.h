@@ -17,7 +17,13 @@ public:
 protected:
 	virtual void BeginPlay() override;
 
+	/* Id of smart watch */
+	int32 smartWatch_id;
+
 public:	
 	virtual void Tick(float DeltaTime) override;
 
+
+	UFUNCTION(BlueprintCallable)
+	int32 GetSmartWatchId() const { return smartWatch_id; }
 };

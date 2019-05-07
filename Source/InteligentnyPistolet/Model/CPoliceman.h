@@ -7,11 +7,11 @@
 #include "StructEnum/CStructs.h"
 
 #include "CoreMinimal.h"
-#include "GameFramework/Pawn.h"
+#include "GameFramework/Actor.h"
 #include "CPoliceman.generated.h"
 
 UCLASS()
-class INTELIGENTNYPISTOLET_API ACPoliceman : public APawn
+class INTELIGENTNYPISTOLET_API ACPoliceman : public AActor
 {
 	GENERATED_BODY()
 
@@ -23,6 +23,9 @@ protected:
 
 	virtual void BeginPlay() override;
 
+	/* Policeman id */
+	int32 officerId;
+
 	/* Officer pistol */
 	ACPistol* pistol;
 
@@ -33,8 +36,6 @@ protected:
 public:	
 
 	virtual void Tick(float DeltaTime) override;
-
-	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 
 	UFUNCTION(BlueprintCallable)
@@ -52,4 +53,7 @@ public:
 	UFUNCTION(BlueprintCallable)
 	ACPistol* GetPistol() const { return pistol; }
 
-};
+	UFUNCTION(BlueprintCallable)
+	int32  GetOfficerId() const { return officerId; }
+
+};	
