@@ -27,6 +27,9 @@ protected:
 	/* Ambulances assign to headquarter */
 	TArray<ACAmbulance*> ambulances;
 
+	/* Orders */
+	TArray<FThreatInfo> crimeNotifications;
+
 
 public:	
 	virtual void Tick(float DeltaTime) override;
@@ -38,9 +41,18 @@ public:
 	void AddAmbulanceToQuarter(ACAmbulance* amb) { this->ambulances.AddUnique(amb); }
 	
 	UFUNCTION(BlueprintImplementableEvent)
-	void AlarmPatrolInRange(float range);
-	
+	void OnCrimeNotify(FThreatInfo threafInfo);
 
 
+	///GET SET ETC
+
+	UFUNCTION(BlueprintCallable)
+	TArray<FThreatInfo> GetCrimeNotifications() const { return crimeNotifications; }
+
+	UFUNCTION(BlueprintCallable)
+	void AddCrimeNotification(FThreatInfo notify) {
+		crimeNotifications.Add(notify); 
+		OnCrimeNotify(notify);
+	}
 
 };

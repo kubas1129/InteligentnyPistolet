@@ -17,6 +17,9 @@ public:
 	/* Unique pistol id */
 	int32 pistol_id;
 
+	/* Number of bullets in chamber */
+	int32 bullets;
+
 protected:
 	virtual void BeginPlay() override;
 
@@ -32,5 +35,7 @@ public:
 	UFUNCTION(BlueprintCallable)
 	int32 GetPistolId() const { return pistol_id; }
 
+	UFUNCTION(BlueprintCallable)
+	int32 GetBullets() const { return bullets; }
 
 };

@@ -26,3 +26,13 @@ void ACSmartWatch::Tick(float DeltaTime)
 
 }
 
+void ACSmartWatch::OnOrderRequest(FSmartWatchOrderRequest reuqest)
+{
+	this->orderRequest = reuqest;
+}
+
+void ACSmartWatch::ClearOrder()
+{
+	orderRequest = FSmartWatchOrderRequest();
+}
+

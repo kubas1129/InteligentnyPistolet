@@ -20,21 +20,6 @@ struct FCoordinates
 
 };
 
-
-USTRUCT(BlueprintType)
-struct FOrder
-{
-	GENERATED_BODY()
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	FString orderName;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	FString orderDetails;
-
-};
-
-
 USTRUCT(BlueprintType)
 struct FSmartWatchOrderRequest
 {
@@ -48,9 +33,6 @@ struct FSmartWatchOrderRequest
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	FCoordinates orderCoord;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	TArray<FOrder> orders;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	bool cancelOrder;
@@ -158,8 +140,13 @@ struct FThreatInfo
 	int32 threatId;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	int32 threatPriority;
+	EOrderPriority orderPriority;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FString threatName;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FString threatDetails;
 
 };
 

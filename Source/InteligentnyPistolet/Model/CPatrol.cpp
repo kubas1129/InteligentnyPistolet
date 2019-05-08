@@ -14,6 +14,8 @@ ACPatrol::ACPatrol()
 void ACPatrol::BeginPlay()
 {
 	Super::BeginPlay();
+
+	patrolId = FMath::RandRange(1000, 9999);
 	
 }
 
@@ -34,5 +36,13 @@ void ACPatrol::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 void ACPatrol::AddPolicemanToPatrol(ACPoliceman * policeman)
 {
 	policeOfficers.AddUnique(policeman);
+}
+
+void ACPatrol::FinishOrder()
+{
+	for (ACPoliceman* v : policeOfficers)
+	{
+		v->GetSmartWatch()->ClearOrder();
+	}
 }
 
