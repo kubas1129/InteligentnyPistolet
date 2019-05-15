@@ -55,4 +55,6 @@ public:
 		OnCrimeNotify(notify);
 	}
 
+	UFUNCTION(BlueprintCallable)
+	TArray<ACPatrol*> GetCreatedPatrols() const { return patrols; }
 };
