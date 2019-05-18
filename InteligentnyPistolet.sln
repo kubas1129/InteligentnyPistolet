@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.25807.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Engine", "Engine", "{13E57E14-00CB-469B-83A5-D6500B7B2150}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Engine", "Engine", "{8DC0013F-B198-4592-A4B3-834CA7A67623}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Games", "Games", "{9D29605F-1850-4528-897A-D6527BD372F6}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Games", "Games", "{29561F87-B4EB-44D9-AB0E-418F3D0CEB0B}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InteligentnyPistolet", "Intermediate\ProjectFiles\InteligentnyPistolet.vcxproj", "{789A4BE8-CD81-4DC5-9F45-2CF18EC10CA6}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UE4", "Intermediate\ProjectFiles\UE4.vcxproj", "{F0CFA46C-BB63-479A-AEC9-48D7000490F9}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Visualizers", "Visualizers", "{CEE27D84-E75A-4E4E-835E-AAB0BAFCE852}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Visualizers", "Visualizers", "{3A5B5E7E-F4CB-4707-945B-8D3BF4527EB4}"
 	ProjectSection(SolutionItems) = preProject
 		..\..\..\..\Program Files\Epic Games\UE_4.21\Engine\Extras\VisualStudioDebugging\UE4.natvis = ..\..\..\..\Program Files\Epic Games\UE_4.21\Engine\Extras\VisualStudioDebugging\UE4.natvis
 	EndProjectSection
@@ -99,10 +99,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{789A4BE8-CD81-4DC5-9F45-2CF18EC10CA6} = {9D29605F-1850-4528-897A-D6527BD372F6}
-		{F0CFA46C-BB63-479A-AEC9-48D7000490F9} = {13E57E14-00CB-469B-83A5-D6500B7B2150}
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {20276A5D-350A-44DA-B14C-1046A22BB16B}
+		{F0CFA46C-BB63-479A-AEC9-48D7000490F9} = {8DC0013F-B198-4592-A4B3-834CA7A67623}
+		{789A4BE8-CD81-4DC5-9F45-2CF18EC10CA6} = {29561F87-B4EB-44D9-AB0E-418F3D0CEB0B}
 	EndGlobalSection
 EndGlobal
