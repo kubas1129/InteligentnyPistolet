@@ -5,7 +5,7 @@
 #include "Paths.h"
 #include "Engine.h"
 
-FString filePath  = FPaths::ConvertRelativePathToFull(FPaths::GameSavedDir()) + TEXT("/SimulationLog.txt");
+FString filePath  = FPaths::ConvertRelativePathToFull(FPaths::ConvertRelativePathToFull(FPaths::ProjectDir())) + TEXT("/SimulationLog.txt");
 
 void UCBlueprintFunctionLibrary::AddToLog(FString logInfo, UObject * WorldContextObject)
 {
