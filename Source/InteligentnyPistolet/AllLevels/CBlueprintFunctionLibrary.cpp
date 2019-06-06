@@ -13,3 +13,9 @@ void UCBlueprintFunctionLibrary::AddToLog(FString logInfo, UObject * WorldContex
 	FString content = "[" + FTimespan::FromSeconds(UGameplayStatics::GetRealTimeSeconds(WorldContextObject)).ToString() + "]" + logInfo + TEXT("\n");
 	FFileHelper::SaveStringToFile(content, *filePath, FFileHelper::EEncodingOptions::AutoDetect, &IFileManager::Get(), EFileWrite::FILEWRITE_Append);
 }
+
+void UCBlueprintFunctionLibrary::ClearLog(UObject * WorldContextObject)
+{
+	//FPlatformFileManager::Get().GetPlatformFile().DeleteFile(*filePath);
+	FFileHelper::SaveStringToFile("[INTELLIGENT PISTOL SIMULATION]", *filePath, FFileHelper::EEncodingOptions::AutoDetect, &IFileManager::Get(), EFileWrite::FILEWRITE_NoFail);
+}

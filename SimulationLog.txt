@@ -1,22 +1,2 @@
-[+00:00:06.029] Threat 75561 was created with priority Normal
-[+00:00:07.823] Patrol 6910 choosed next location (X=-1209.516 Y=500.000) as new patrol target
-[+00:00:15.879] Patrol 6910 choosed next location (X=-300.000 Y=-194.133) as new patrol target
-[+00:00:04.013] Threat 41176 was created with priority Normal
-[+00:00:05.013] Threat 18913 was created with priority High
-[+00:00:06.014] Threat 39103 was created with priority Normal
-[+00:00:07.014] Threat 23930 was created with priority Normal
-[+00:00:02.039] Threat 32414 was created with priority High
-[+00:00:03.039] Threat 80492 was created with priority Normal
-[+00:00:04.039] Threat 81087 was created with priority Normal
-[+00:00:02.043] Threat 21766 was created with priority Normal
-[+00:00:03.043] Threat 26234 was created with priority Normal
-[+00:00:04.043] Threat 71840 was created with priority High
-[+00:00:05.044] Threat 33549 was created with priority Normal
-[+00:00:06.044] Threat 46495 was created with priority High
-[+00:00:07.044] Threat 86016 was created with priority Normal
-[+00:00:08.044] Threat 42982 was created with priority High
-[+00:00:02.015] Threat 77266 was created with priority Normal
-[+00:00:03.016] Threat 92150 was created with priority High
-[+00:00:04.016] Threat 84786 was created with priority Normal
-[+00:00:05.016] Threat 90359 was created with priority Normal
-[+00:00:00.008] Threat 75078 was created with priority Normal
+[INTELLIGENT PISTOL SIMULATION] 
+[+00:00:00.008] Threat 79812 was created with priority High

@@ -17,4 +17,7 @@ class INTELIGENTNYPISTOLET_API UCBlueprintFunctionLibrary : public UBlueprintFun
 	UFUNCTION(BlueprintCallable, meta = (WorldContext = "WorldContextObject"))
 	static void AddToLog(FString logInfo, UObject * WorldContextObject);
 	
+	UFUNCTION(BlueprintCallable, meta = (WorldContext = "WorldContextObject"))
+	static void ClearLog(UObject * WorldContextObject);
+
 };
